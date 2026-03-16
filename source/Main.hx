@@ -17,13 +17,6 @@ import haxe.CallStack;
 import sys.FileSystem;
 import sys.io.File;
 import sys.io.Process;
-#if android
-import android.content.Context;
-import android.os.Build;
-#end
-#if mobile
-import mobile.CopyState;
-#end
 import lime.app.Application;
 #if desktop
 import important.Discord.DiscordClient;
@@ -81,13 +74,6 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-
-		#if mobile
-		#if android
-		mobile.StorageUtil.requestPermissions();
-		#end
-		Sys.setCwd(mobile.StorageUtil.getStorageDirectory());
-		#end
 
 		important.CrashHandler.init();
 				
