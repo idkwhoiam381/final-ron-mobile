@@ -12,9 +12,6 @@ class ClientPrefs {
 	public static var hitboxPos:Bool = true; // hitbox extra button position option
 	public static var controlsAlpha:Float = FlxG.onMobile ? 0.6 : 0;
 	public static var screensaver:Bool = false;
-	#if android
-	public static var storageType:String = "EXTERNAL_DATA";
-	#end
 	public static var hitboxType:String = "Gradient";
 	public static var shaders:Bool = true;
 	public static var downScroll:Bool = false;
@@ -115,9 +112,6 @@ class ClientPrefs {
 		FlxG.save.data.hitboxPos = hitboxPos;
 		FlxG.save.data.controlsAlpha = controlsAlpha;
 		FlxG.save.data.screensaver = screensaver;
-		#if android
-		FlxG.save.data.storageType = storageType;
-		#end
 		FlxG.save.data.hitboxType = hitboxType;
 		FlxG.save.data.shaders = shaders;
 		FlxG.save.data.downScroll = downScroll;
@@ -185,11 +179,6 @@ class ClientPrefs {
 		if(FlxG.save.data.screensaver != null) {
 			screensaver = FlxG.save.data.screensaver;
 		}
-		#if android
-		if(FlxG.save.data.storageType != null) {
-			storageType = FlxG.save.data.storageType;
-		}
-		#end
 		if(FlxG.save.data.hitboxType != null) {
 			hitboxType = FlxG.save.data.hitboxType;
 		}
