@@ -26,7 +26,7 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/MobilePorting/hxcpp"
+      "url": "https://github.com/ShadowEngineTeam/hxcpp"
     },
     {
       "name": "flixel-addons",
@@ -45,8 +45,8 @@
     },
     {
       "name": "hscript",
-      "type": "haxelib",
-      "version": "2.5.0",
+      "type": "git",
+      "ref": "2.5.0",
       "url": "https://github.com/HaxeFoundation/hscript"
     },
     {
@@ -69,14 +69,12 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/mcagabe19/linc_luajit-rewriten"
+      "url": "https://github.com/idkwhoiam381/linc_luajit-rewriten"
     },
     {
       "name": "hxvlc",
-      "type": "git",
-      "dir": null,
-      "ref": "main",
-      "url": "https://github.com/HomuHomu833-stuff/hxvlc"
+      "type": "haxelib",
+      "version": "1.8.1"
     },
     {
       "name": "flxanimate",
